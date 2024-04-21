@@ -4,183 +4,262 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html"
-        ><img src="./images/Vector-min.png" alt="logo" width="66" height="52"
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <button type="button">Order Now</button>
+    <header class="page-header">
+      <div class="container header-container">
+        <a class="logo" href="./index.html"
+          ><img src="./images/Vector-min.png" alt="logo" width="66" height="52"
+        /></a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li><a class="navigation-link home-link" href="">Home</a></li>
+            <li><a class="navigation-link" href="">About</a></li>
+            <li><a class="navigation-link" href="">Service</a></li>
+            <li><a class="navigation-link" href="">Menu</a></li>
+            <li><a class="navigation-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="main-btn" type="button">Order Now</button>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1>Enjoy Your Favorite Food From Anywhere</h1>
-        <p>
-          With just a few clicks, you can have your favorite meals delivered
-          straight to your doorstep, no matter where you are. Order now and
-          enjoy a hassle-free and delicious meal from the comfort of your own
-          home.
-        </p>
-        <button type="button">Order Now</button>
-        <img src="./images/salat.png" alt="salat" width="528" height="528" />
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-wrap">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-text">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="main-btn" type="button">Order Now</button>
+          </div>
+          <img src="./images/salat.png" alt="salat" width="528" height="528" />
+        </div>
       </section>
 
-      <section>
-        <img src="./images/aple-min.png" alt="aple" width="396" height="502" />
-        <h2>What’s Special About Our Offerings</h2>
-        <p>
-          With our platform, you can browse through a diverse selection of
-          cuisines and local restaurants, and choose from a variety of dishes
-          that cater to your specific taste buds.
-        </p>
-        <ul>
-          <li>
-            <h3>Fasest Delivery</h3>
-            <p>
-              Our advanced logistics system and dedicated delivery partners
-              ensure that your meals are delivered to you within 30-minutes.
+      <section class="about">
+        <div class="container about-container">
+          <img
+            src="./images/aple-min.png"
+            alt="aple"
+            width="396"
+            height="502"
+          />
+          <div class="abouy-wrap">
+            <h2 class="about-title">What’s Special About Our Offerings</h2>
+            <p class="about-text">
+              With our platform, you can browse through a diverse selection of
+              cuisines and local restaurants, and choose from a variety of
+              dishes that cater to your specific taste buds.
             </p>
-          </li>
-          <li>
-            <h3>Easy To Order</h3>
-            <p>
-              You can browse through a wide variety of cuisines and restaurants,
-              select your favorite meals, and place your order in just a few
-              clicks.
-            </p>
-          </li>
-        </ul>
-        <button type="button">Order Now</button>
+            <ul class="about-list">
+              <li class="about-item">
+                <h3 class="about-subtitel">Fasest Delivery</h3>
+                <p class="about-desk">
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
+                </p>
+              </li>
+              <li class="about-item">
+                <h3 class="about-subtitel">Easy To Order</h3>
+                <p class="about-desk">
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order
+                  in just a few clicks.
+                </p>
+              </li>
+            </ul>
+            <button class="main-btn clear-btn" type="button">Order Now</button>
+          </div>
+        </div>
       </section>
-      <section>
-        <h2>Some of Our Favorites</h2>
-        <p>Looking for something delicious?</p>
-        <ul>
-          <li>
-            <img
-              src="./images/gamburger-min.png"
-              alt="gamburger"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/pasta-min.png"
-              alt="pasta"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/pizza-min.png"
-              alt="pizza"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/chicken-min.png"
-              alt="chicken"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/salat-min.png"
-              alt="salat"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/borshch-min.png"
-              alt="borshch"
-              width="315"
-              height="315"
-            />
-          </li>
-        </ul>
+      <section class="favorites">
+        <div class="container">
+          <h2 class="favorites-titel">Some of Our Favorites</h2>
+          <p class="favorites-text">Looking for something delicious?</p>
+          <ul class="favorites-list">
+            <li class="favorites-item">
+              <img
+                src="./images/gamburger-min.png"
+                alt="gamburger"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="favorites-item">
+              <img
+                src="./images/pasta-min.png"
+                alt="pasta"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="favorites-item">
+              <img
+                src="./images/pizza-min.png"
+                alt="pizza"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="favorites-item">
+              <img
+                src="./images/chicken-min.png"
+                alt="chicken"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="favorites-item">
+              <img
+                src="./images/salat-min.png"
+                alt="salat"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li class="favorites-item">
+              <img
+                src="./images/borshch-min.png"
+                alt="borshch"
+                width="315"
+                height="315"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>What our Customers Say</h2>
-        <p>
-          Don't just take our word for it - see what our satisfied customers
-          have to say
-        </p>
-        <ul>
-          <li>
-            <p>
-              “The Best app I have used to order food in a while, so many
-              options to choose from too, I would recommend to a freind, No
-              questions asked”
-            </p>
-            <img src="./images/Ellipse 9-min.png" alt="Dude" />
-            <h3>Sumith Shah</h3>
-            <p>Some Dude</p>
-          </li>
-          <li>
-            <p>
-              “The ease with which I can just go in and order what i want was
-              amazing, It has been a very pleasant experience ordering from this
-              app”
-            </p>
-            <img src="./images/Ellipse 10-min.png" alt="Dude" />
-            <h3>Sumith Shah</h3>
-            <p>Some Dude</p>
-          </li>
-        </ul>
+      <section class="reviews">
+        <div class="container reviews-container">
+          <h2 class="reviews-titel">What our Customers Say</h2>
+          <p class="reviews-text">
+            Don't just take our word for it - see what our satisfied customers
+            have to say
+          </p>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <p class="reviews-desk">
+                “The Best app I have used to order food in a while, so many
+                options to choose from too, I would recommend to a freind, No
+                questions asked”
+              </p>
+              <div class="client">
+                <img src="./images/Ellipse 9-min.png" alt="Dude" />
+                <div class="about-client">
+                  <h3 class="name">Sumith Shah</h3>
+                  <p class="subname">Some Dude</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews-item">
+              <p class="reviews-desk">
+                “The ease with which I can just go in and order what i want was
+                amazing, It has been a very pleasant experience ordering from
+                this app”
+              </p>
+              <div class="client">
+                <img src="./images/Ellipse 10-min.png" alt="Dude" />
+                <div class="about-client">
+                  <h3 class="name">Sumith Shah</h3>
+                  <p lass="subname">Some Dude</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <srction>
-        <h2>Subscribe To Get Special Offers</h2>
-        <p>
-          Order now and receive 10% off your first meal with Enjoy Your Favorite
-          Food From Anywhere.
-        </p>
-        <button type="submit">Subscribe</button>
-        <img src="./images/banan-min.png" alt="banan" />
-      </srction>
+      <section class="subscribe">
+        <div class="container subscribe-container">
+          <div class="subscribe-wrap">
+            <h2 class="subscribe-titel">Subscribe To Get Special Offers</h2>
+            <p class="subscribe-text">
+              Order now and receive 10% off your first meal with Enjoy Your
+              Favorite Food From Anywhere.
+            </p>
+            <form class="subscribe-form">
+              <label class="subscribe-labe">
+                <input
+                  class="subscribe-input"
+                  type="text"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </label>
+              <button class="main-btn subscribe-btn" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <img src="./images/banan-min.png" alt="banan" />
+        </div>
+      </section>
     </main>
-    <footer>
-      <div>
-        <a href="./index.html"
-          ><img src="./images/Vector-min.png" alt="logo" width="66" height="52"
-        /></a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <p>Subscribe</p>
-        <button type="submit">Subscribe</button>
-        <p>
-          By subscribing you agree to with our
-          <span><a href="">Privacy Policy</a></span>
-        </p>
-      </div>
-      <div>
-        <ul>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms of Service</a></li>
-          <li><a href="">Cookies Settings</a></li>
-        </ul>
-        <p>2022 FoodSta. All right reserved.</p>
+    <footer class="page-footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <div class="footer-menu">
+            <a class="logo footer-logo" href="./index.html"
+              ><img
+                src="./images/Vector-min.png"
+                alt="logo"
+                width="66"
+                height="52"
+            /></a>
+            <ul class="footer-navigation-list">
+              <li><a class="footer-navigation-link" href="">Home</a></li>
+              <li><a class="footer-navigation-link" href="">About</a></li>
+              <li><a class="footer-navigation-link" href="">Service</a></li>
+              <li><a class="footer-navigation-link" href="">Menu</a></li>
+              <li><a class="footer-navigation-link" href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-subscribe">
+            <p class="footer-subscribe-text">Subscribe</p>
+            <form class="footer-subscribe-form">
+              <label class="footer-subscribe-labe">
+                <input
+                  class="footer-subscribe-input"
+                  type="text"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </label>
+              <button class="main-btn footer-subscribe-btn" type="submit">
+                Subscribe
+              </button>
+            </form>
+            <p class="footer-form-text">
+              By subscribing you agree to with our
+              <span><a class="privacy-policy" href=""> Privacy Policy</a></span>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="legal">
+            <li class="legal-item"><a href="">Privacy Policy</a></li>
+            <li class="legal-item"><a href="">Terms of Service</a></li>
+            <li class="legal-item"><a href="">Cookies Settings</a></li>
+          </ul>
+          <p class="copyright">2022 FoodSta. All right reserved.</p>
+        </div>
       </div>
     </footer>
   </body>

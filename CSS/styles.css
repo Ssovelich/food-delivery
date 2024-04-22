@@ -319,6 +319,7 @@ button {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #7eb101;
+  margin-left: 2px;
 }
 .footer-bottom {
   display: flex;

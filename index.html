@@ -35,7 +35,12 @@
             <li><a class="navigation-link" href="">Contact</a></li>
           </ul>
         </nav>
-        <button class="main-btn" type="button">Order Now</button>
+        <button class="header-btn main-btn" type="button">Order Now</button>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- ========== hero ========== -->
@@ -50,30 +55,42 @@
               enjoy a hassle-free and delicious meal from the comfort of your
               own home.
             </p>
-            <button class="main-btn" type="button">Order Now</button>
+            <button class="hero-btn main-btn" type="button">Order Now</button>
           </div>
           <div class="img-hero-wrap">
-            <a href="" class="icon-arrow-wrap icon-arrow-wrap-left">
-              <svg class="icon-arrow" width="17" height="30">
+            <button class="arrow-btn arrow-btn-left" type="button">
+              <svg class="icon-arrow-left icon-arrow-siza">
                 <use href="./images/icons.svg#icon-arrow-left"></use>
               </svg>
-            </a>
-            <a href="" class="icon-arrow-wrap icon-arrow-wrap-right">
-              <svg class="icon-arrow" width="17" height="30">
+            </button>
+            <button class="arrow-btn arrow-btn-right" type="button">
+              <svg class="icon-arrow-right icon-arrow-siza">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
-            </a>
-            <img
-              src="./images/salat.png"
-              alt="salat"
-              width="528"
-              height="528"
-            />
+            </button>
+            <picture>
+              <source
+                srcset="./images/salat.png 1x, ./images/salat@2x.png 2x"
+                media="(min-width: 1280px)"
+                width="528"
+                height="528"
+              />
+              <source
+                srcset="
+                  ./images/salat-tablet.png    1x,
+                  ./images/salat-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                width="292"
+                height="292"
+              />
+              <img src="./images/salat.png" alt="salat" />
+            </picture>
           </div>
         </div>
       </section>
       <!-- ========== about ========== -->
-      <section class="about" id="about">
+      <section class="about hidden" id="about">
         <div class="container about-container">
           <img
             src="./images/aple-min.png"
@@ -120,7 +137,7 @@
         </div>
       </section>
       <!-- ========== favorites ========== -->
-      <section class="favorites">
+      <section class="favorites hidden">
         <div class="container">
           <h2 class="favorites-titel">Some of Our Favorites</h2>
           <p class="favorites-text">Looking for something delicious?</p>
@@ -177,7 +194,7 @@
         </div>
       </section>
       <!-- ========== reviews ========== -->
-      <section class="reviews">
+      <section class="reviews hidden">
         <div class="container reviews-container">
           <h2 class="reviews-titel">What our Customers Say</h2>
           <p class="reviews-text">
@@ -271,7 +288,7 @@
         </div>
       </section>
       <!-- ========== subscribe ========== -->
-      <section class="subscribe">
+      <section class="subscribe hidden">
         <div class="container subscribe-container">
           <div class="subscribe-wrap">
             <h2 class="subscribe-titel">Subscribe To Get Special Offers</h2>
@@ -298,7 +315,7 @@
       </section>
     </main>
     <!-- ========== footer ========== -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-container">
         <div class="footer-top">
           <div class="footer-menu">
@@ -349,7 +366,7 @@
       </div>
     </footer>
     <!-- ========== modal ========== -->
-    <div class="backdrop is-open">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="modal-cloce-btn" type="button">
           <svg class="icon-cloce" width="12" height="12">

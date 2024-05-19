@@ -335,6 +335,7 @@ about
     max-width: 1280px;
     background-image: url(../images/bgr-about-tablet.png);
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .about-title {
     font-size: 42px;

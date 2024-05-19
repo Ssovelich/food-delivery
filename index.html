@@ -43,8 +43,8 @@
         </button>
       </div>
     </header>
-    <!-- ========== hero ========== -->
     <main>
+      <!-- ========== hero ========== -->
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-wrap">
@@ -90,14 +90,33 @@
         </div>
       </section>
       <!-- ========== about ========== -->
-      <section class="about hidden" id="about">
+      <section class="about" id="about">
         <div class="container about-container">
-          <img
-            src="./images/aple-min.png"
-            alt="aple"
-            width="396"
-            height="502"
-          />
+          <picture>
+            <source
+              srcset="./images/apple.png 1x, ./images/apple@2x.png 2x"
+              media="(min-width: 1280px)"
+              width="550"
+              height="604"
+            />
+            <source
+              srcset="
+                ./images/apple-tablet.png    1x,
+                ./images/apple-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              width="704"
+              height="394"
+            />
+            <source
+              srcset="./images/apple-mob.png 1x, ./images/apple-mob@2x.png 2x"
+              media="(max-width: 767px)"
+              width="280"
+              height="309"
+            />
+            <img src="./images/apple-mob.png" alt="aple" />
+          </picture>
+
           <div class="about-wrap">
             <h2 class="about-title">What’s Special About Our Offerings</h2>
             <p class="about-text">
@@ -132,7 +151,12 @@
                 </p>
               </li>
             </ul>
-            <button class="main-btn clear-btn" type="button">Order Now</button>
+            <span class="about-wrap-btm-link">
+              <button class="main-btn clear-btn" type="button">
+                Order now
+              </button>
+              <a class="about-link" href="">Read more</a>
+            </span>
           </div>
         </div>
       </section>

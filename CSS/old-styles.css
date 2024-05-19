@@ -15,18 +15,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.hero-wrap {
-  width: 511px;
-}
-.hero-title {
-  font-weight: 700;
-  font-size: 28px;
-  margin-bottom: 28px;
-}
-.hero-text {
-  margin-bottom: 40px;
-  line-height: 1.5;
-}
+
 .img-hero-wrap {
   position: relative;
   border: 26px solid #ffe550;
